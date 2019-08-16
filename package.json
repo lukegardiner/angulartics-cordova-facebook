@@ -1,0 +1,32 @@
+{
+  "name": "angulartics-cordova-facebook",
+  "version": "1.0.0",
+  "description": "Facebook App Events plugin for Angulartics for cordova based apps",
+  "main": "./lib/index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
+    "build": "mkdir -p dist && uglifyjs lib/angulartics-cordova-facebook.js --compress --source-map dist/angulartics-cordova-facebook.min.js.map --source-map-root .. --source-map-url ../dist/angulartics-cordova-facebook.min.js.map -o dist/angulartics-cordova-facebook.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "angularjs",
+    "angulartics",
+    "analytics",
+    "facebook",
+    "pixel",
+    "facebook-pixel",
+    "angulartics-plugin"
+  ],
+  "author": "Luke Gardiner",
+  "license": "MIT",
+  "devDependencies": {
+    "uglify-js": "^2.6.2"
+  },
+  "dependencies": {
+    "angulartics": "^1.0.3"
+  }
+}
